@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ネット投票</title>
+  <link href="http://fonts.googleapis.com?family=Philosopher" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <ul class="main-nav">
+        <li><a href="index.html">ネット投票</a></li>
+        <li><a href="info.html">選挙通知</a></li>
+        <li><a href="result.html">結果通知</a></li>
+        <li><a href="voters.html">有権者登録</a></li>
+        <li><a href="ballots.html">投票データ</a></li>
+        <li><a href="send.html">送付準備</a></li>
+        <li><a href="data.html">データベース</a></li>
+      </ul>
+    </div>
+    <h1>(検証可能な投票方式の提案)</h1>
+    <h2>2022年参院選・戦国武将区の投票サイト(明治市／例示)
+    </h2>
+  </header>
+
+  <div class="date">
+    <h3>1、公示　6月22日（水）</h3>
+    <h3>2、投開票日　7月10日（日）</h3>
+  </div>
+
+  <div class="candidate">
+    <h3>3、戦国武将区の定数と立候補者</h3>
+    <h4>　・定数：　1議席</h4>
+    <h4>　・立候補者：　3名</h4>
+    <h3 class="meibo">　立候補者名簿</h3>
+    <ul class="names">
+      <li>　織田信長</li>
+      <li>　豊臣秀吉</li>
+      <li>　徳川家康</li>
+    </ul>
+  </div>
+
+  <div class="methods">
+    <h3>4、投票方法</h3>
+    <a>下の①②③のどの方法でも投票可能です。</a><br>
+    <h4>　①　投票日または期日前に投票所で投票する方法</h4>
+    <h4>　②　期日前必着で選挙管理委員会宛に投票用紙を郵送する方法</h4>
+    <h4>　③　本サイトで有権者登録事項を入力し、ネット投票する方法</h4>
+  </div>
+
+  <div class="netVote">
+    <h3>5、ネット投票する方は、以下の手順で投票してください。</h3>
+
+    <h4>（１）下に、有権者登録事項を入力してください。</h4>
+    <h5>〇投票権所在自治体　⇒　明治市</h5>
+    <div class="wrapper">
+      <form action="#">
+        <div>
+          <label for="number">①有権者番号　⇒</label>
+          <input type="number" id="idNumber" name="your-id">
+        </div>
+        <div>
+          <label for="name">②氏　名　⇒　</label>
+          <input type="text" id="name" name="your-name">
+        </div>
+        <div>
+          <label for="address">③住　所　⇒　</label>
+          <input type="text" id="address" name="your-address">
+        </div>
+        <div>
+          <label for="email">④Email 　⇒　</label>
+          <input type="email" id="email" name="your-email">
+        </div>
+      </form>
+     
+      <input type="submit" class="button" value="照合">
+      <a class="check1">確認できました。</a>
+    </div>
+
+    <h4>（２）下のような内容が、郵送またはメールで送られた投票案内に書かれています。ご確認ください。</h4>
+    
+    <div class="infoEx">
+      <h6>㋐　あなたの今回の選挙における投票者番号は、〇〇〇〇〇〇です。</h6>
+      <h6>㋑　各立候補者のあなた用の仮番号は下の通りです。</h6>
+      <h6>　　織田信長　→　〇〇〇</h6>
+      <h6>　　豊臣秀吉　→　〇〇〇</h6>
+      <h6>　　徳川家康　→　〇〇〇</h6>
+    </div>
+
+    <h4>（３）下の投票入力欄に、あなたの①投票方法、②投票者番号、③支持する候補者の仮番号、を入力してください。</h4>
+    <h6>　投票方法は、１：投票所投票、２：郵送投票、３：ネット投票です。①②③の入力を確認したら、「投票（登録）」をクリックしてください。以上でネット投票は終了です。</h6>
+
+    <div class="youVote">
+      <label for="voteWay">①投票方法（番号）⇒</label>
+      <input type="number" class="way" name="way">
+    </div>
+    <div>
+      <label for="voterNumber">②投票者番号　　⇒　</label>
+      <input type="number" class="voterNum" name="voterNum">
+    </div>
+    <div>
+      <label for="candiNumber">③候補者仮番号　⇒　</label>
+      <input type="number" class="candiNum" name="candiNum">
+    </div>
+    <input type="submit" id="register" value="投票（登録）">
+    
+    
+    <div class="netVote4">
+      <h4>（４）投票が7月10日午後7時に締め切られると、コンピュータでの集計が始まり、速やかに開票結果が表示・公表されます。また、ネット投票を利用された方には、メールで結果が通知されます。 ⇒　
+      <a href="result.html">選挙結果（例示）</a>
+      </h4>
+    </div>
+    
+    <h4>（５）選挙管理委員会では、個別の投票とその集計結果をデータベースで保管・管理しています。これを使って、以下のように選挙の信頼性を高めることができます。</h4>
+    <a>㋐　有権者数と投票者数、票数に整合性があるかの検証ができる。</a><br>
+    <a>㋑　自分の票がどの候補者に入ったかを、各投票者本人が検証できる。</a><br>
+    <a>㋒　集計結果に審査請求が出され承認された時には、データベースを提示してチェックすることで、疑義を解決できる。</a><br>
+    <a>㋓　有権者や選挙委員会による贈収賄等の不正については、選挙の公正性を求める有権者の意識高揚が、不正を防止する力となる。</a>
+    
+    <input type="submit" class="close" value="投票サイトを閉じる">
+    
+  </div>
+  
+  
+
+
+  <footer class="footer">
+    (c) to7ma3na3@gmail.com
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
