@@ -782,21 +782,19 @@ h3 {
 @media screen and (max-width: 720px) {
 
     body {
-        width: 100vw;
+        width: 95vw;
         margin: 0 auto;
         margin-bottom: 30px;
     }
 
     h1 {
         font-size: 20px;
-        /* font-size: 22px; */
         line-height: 3;
         color: cornflowerblue;
     }
     
     h2 {
         font-size: 18px;
-        /* font-size: 20px; */
         line-height: 2;
         color: #777;
     }
@@ -836,7 +834,7 @@ h3 {
         display: grid;
         grid-auto-flow: column;
         grid-template-columns: 300px;
-        grid-template-rows: repeat(20, 130px);
+        grid-template-rows: repeat(40, 130px);
         gap: 0px 10px;
         margin-left: 30px;
     }
@@ -876,8 +874,6 @@ h3 {
         gap: 0px 0px;
         margin: 20px;
     }
-
-
 
 
 }
